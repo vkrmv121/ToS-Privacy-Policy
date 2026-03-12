@@ -5,27 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DeviceInfo Privacy & Policy</title>
   <meta name="description" content="DeviceInfo Privacy & Policy.">
-  <link rel="icon" href="assets/app-icon.png">
+  <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
   <div class="site-shell">
     <header class="toolbar">
       <div class="toolbar__icon-wrap">
-        <img class="toolbar__icon" src="assets/app-icon.png" alt="DeviceInfo icon">
+        <img class="toolbar__icon" src="assets/app-icon.svg" alt="DeviceInfo icon">
       </div>
       <div class="toolbar__copy">
         <div class="toolbar__eyebrow">DeviceInfo Legal Center</div>
         <h1 class="toolbar__title">Privacy &amp; Policy</h1>
-        <p class="toolbar__subtitle">Public web version of the DeviceInfo in-app privacy disclosure and policy explanation.</p>
+        <p class="toolbar__subtitle">Public web version of the DeviceInfo in-app privacy disclosure and feature-use explanation.</p>
       </div>
       <div class="toolbar__actions">
         <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.vkrm.deviceinfo" target="_blank" rel="noreferrer">Open Play Store</a>
-        <a class="btn btn--ghost" href="index.html">Back Home</a>
+        <a class="btn btn--ghost" href="https://t.me/oddsexist" target="_blank" rel="noreferrer">Open Telegram</a>
       </div>
     </header>
 
-    <nav class="nav-tabs nav-tabs--inner">
+    <nav class="nav-tabs nav-tabs--inner" aria-label="Legal pages">
       <a class="nav-card" href="index.html"><div class="nav-card__title">Home</div><div class="nav-card__subtitle">Legal menu</div></a>
       <a class="nav-card" href="tos.html"><div class="nav-card__title">ToS</div><div class="nav-card__subtitle">Usage rules</div></a>
       <a class="nav-card active" href="privacy.html"><div class="nav-card__title">Privacy &amp; Policy</div><div class="nav-card__subtitle">Data handling</div></a>
@@ -38,19 +38,19 @@
         <p>What DeviceInfo reads, what stays local, what leaves the device, and why the app uses specific capabilities.</p>
         <ul class="bullet-list">
           <li><div><strong>Mostly local processing.</strong> Most diagnostics are processed locally on your device. The app does not require account sign-in, does not include ads, and does not ship an analytics SDK or a developer-owned backend.</div></li>
-          <li><div><strong>Device information access.</strong> The app accesses device information such as installed packages, hardware and OS signals, storage, memory, SIM state, Bluetooth state, Wi-Fi state, camera characteristics, and sensor readings to render the feature screens you open.</div></li>
+          <li><div><strong>Device information access.</strong> The app accesses installed packages, hardware and OS signals, storage, memory, SIM state, Bluetooth state, Wi-Fi state, camera characteristics, and sensor readings only to render the feature screens you open.</div></li>
           <li><div><strong>Microphone test behavior.</strong> The microphone test records a short local sample only when you start the test. That sample is used for on-device playback and is not uploaded by the app.</div></li>
           <li><div><strong>Crash logs.</strong> Crash logs are stored locally on your device so you can inspect the latest failure report from Settings or the crash screen.</div></li>
           <li><div><strong>Public IP lookup.</strong> The Public IP action sends a request to <a class="inline-link" href="https://ipwho.is/" target="_blank" rel="noreferrer">ipwho.is</a> only when you tap that button. That request exposes your current network IP address and standard request metadata to that third-party service.</div></li>
           <li><div><strong>Package visibility justification.</strong> App inventory access is used to populate Installed Apps, System Apps, All Apps, and package details screens. Without broad package visibility, those features would return partial results on modern Android.</div></li>
-          <li><div><strong>No intentional sale or analytics profiling.</strong> The app does not intentionally sell data. External sharing is limited to explicit user actions such as opening links, sending email, opening the Play Store, or requesting public IP details.</div></li>
-          <li><div><strong>Support and policy questions.</strong> For support or privacy questions, use the Contact page in this site.</div></li>
+          <li><div><strong>No intentional sale or analytics profiling.</strong> The app does not intentionally sell data. External sharing is limited to explicit user actions such as opening links, sending email, opening the Play Store, opening the legal website, or requesting public IP details.</div></li>
+          <li><div><strong>Support and policy questions.</strong> For support or privacy questions, use the Contact page in this site or the Contact tab inside the app legal dialog.</div></li>
         </ul>
       </section>
 
       <section class="bullet-card">
         <h2>Feature Use Rationale</h2>
-        <p>This section exists to make the app's capability use understandable to users and review teams.</p>
+        <p>This section explains why specific capabilities exist inside the app.</p>
         <ul class="bullet-list">
           <li><div><strong>Apps tab.</strong> The app includes Installed Apps, System Apps, All Apps, and package-details screens. Those features need broad package visibility to return the complete device inventory instead of a filtered subset.</div></li>
           <li><div><strong>Network and Bluetooth pages.</strong> Wi-Fi, transport state, and Bluetooth state are shown only when those screens are opened. The app does not maintain a background connection log or analytics stream.</div></li>
