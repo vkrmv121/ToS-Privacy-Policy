@@ -39,8 +39,8 @@
         <ul class="bullet-list">
           <li><div><strong>Mostly local processing.</strong> Most diagnostics are processed locally on your device. The app does not require account sign-in, does not include ads, and does not ship an analytics SDK or a developer-owned backend.</div></li>
           <li><div><strong>Device information access.</strong> The app accesses installed packages, hardware and OS signals, storage, memory, SIM state, Bluetooth state, Wi-Fi state, camera characteristics, and sensor readings only to render the feature screens you open.</div></li>
-          <li><div><strong>Microphone test behavior.</strong> The microphone test records a short local sample only when you start the test. That sample is used for on-device playback and is not uploaded by the app.</div></li>
-          <li><div><strong>Crash logs.</strong> Crash logs are stored locally on your device so you can inspect the latest failure report from Settings or the crash screen.</div></li>
+          <li><div><strong>Microphone test behavior.</strong> The microphone test records a short local sample only when you start the test. That sample is used for on-device playback, stays in app cache for the active test session, and is deleted when you leave the microphone test screen.</div></li>
+          <li><div><strong>Crash logs.</strong> Crash logs are stored locally in app-private storage so you can inspect the latest failure report from Settings or the crash screen. They remain there until you clear them, clear app data, or uninstall the app.</div></li>
           <li><div><strong>Public IP lookup.</strong> The Public IP action sends a request to <a class="inline-link" href="https://ipwho.is/" target="_blank" rel="noreferrer">ipwho.is</a> only when you tap that button. That request exposes your current network IP address and standard request metadata to that third-party service.</div></li>
           <li><div><strong>Package visibility justification.</strong> App inventory access is used to populate Installed Apps, System Apps, All Apps, and package details screens. Without broad package visibility, those features would return partial results on modern Android.</div></li>
           <li><div><strong>No intentional sale or analytics profiling.</strong> The app does not intentionally sell data. External sharing is limited to explicit user actions such as opening links, sending email, opening the Play Store, opening the legal website, or requesting public IP details.</div></li>
@@ -56,6 +56,16 @@
           <li><div><strong>Network and Bluetooth pages.</strong> Wi-Fi, transport state, and Bluetooth state are shown only when those screens are opened. The app does not maintain a background connection log or analytics stream.</div></li>
           <li><div><strong>Sensor and testing pages.</strong> Sensor values, microphone, vibration, flashlight, speaker, and button tests are user-facing diagnostics. They are initiated by direct user interaction and used for on-device verification.</div></li>
           <li><div><strong>Public IP button.</strong> External network access is limited and user-triggered. The public IP lookup is a deliberate button action, not a background sync.</div></li>
+        </ul>
+      </section>
+
+      <section class="bullet-card">
+        <h2>Retention and Deletion</h2>
+        <p>This section states how long the limited locally stored data remains on the device.</p>
+        <ul class="bullet-list">
+          <li><div><strong>Crash logs.</strong> Only the latest captured crash report is stored. You can delete it from the Crash Logs screen at any time. It is also removed when app data is cleared or the app is uninstalled.</div></li>
+          <li><div><strong>Microphone samples.</strong> Microphone loopback samples are temporary cache files used for the active test session. They are overwritten by a new recording and deleted when you leave the microphone test screen.</div></li>
+          <li><div><strong>Device and package details.</strong> Most hardware, app-inventory, and sensor details are re-read from Android at runtime and are not persisted to a developer-owned server.</div></li>
         </ul>
       </section>
     </main>

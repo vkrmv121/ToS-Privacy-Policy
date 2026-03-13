@@ -32,8 +32,8 @@
     "bullets": [
       "Most diagnostics are processed locally on your device. The app does not require account sign-in, does not include ads, and does not ship an analytics SDK or a developer-owned backend.",
       "The app accesses installed packages, hardware and OS signals, storage, memory, SIM state, Bluetooth state, Wi-Fi state, camera characteristics, and sensor readings only to render the feature screens you open.",
-      "The microphone test records a short local sample only when you start the test. That sample is used for on-device playback and is not uploaded by the app.",
-      "Crash logs are stored locally on your device so you can inspect the latest failure report from Settings or the crash screen.",
+      "The microphone test records a short local sample only when you start the test. That sample is used for on-device playback, stays in app cache for the active test session, and is deleted when you leave the microphone test screen.",
+      "Crash logs are stored locally in app-private storage so you can inspect the latest failure report from Settings or the crash screen. They remain there until you clear them, clear app data, or uninstall the app.",
       "The Public IP action sends a request to ipwho.is only when you tap that button. That request exposes your current network IP address and standard request metadata to that third-party service.",
       "App inventory access is used to populate Installed Apps, System Apps, All Apps, and package details screens. Without broad package visibility, those features would return partial results on modern Android.",
       "The app does not intentionally sell data. External sharing is limited to explicit user actions such as opening links, sending email, opening the Play Store, opening the legal website, or requesting public IP details.",
