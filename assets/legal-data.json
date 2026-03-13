@@ -21,6 +21,7 @@
       "DeviceInfo is a device diagnostics and hardware information app. By using it, you agree to use it for lawful, non-abusive diagnostic purposes only.",
       "Hardware, thermal, network, battery, sensor, camera, and package details are gathered from Android system APIs, local databases, and on-device probes. Output can differ by OEM, firmware, region, permissions, and hardware access.",
       "The Apps workspace also includes Hidden Apps and a local App Security Audit. Those results are heuristic reviews of package metadata and permissions, not guaranteed malware verdicts.",
+      "The app may display Google AdMob native ads in selected screens and occasional app-open ads after longer background inactivity. Those placements are part of the supported app experience and do not change the diagnostic nature of the app.",
       "Testing features such as microphone, vibration, flashlight, speaker, and sensor tools are provided for device verification. You are responsible for using them safely and with awareness of battery, heat, and sound exposure.",
       "The app may open external destinations only when you explicitly choose them, including Telegram, email, Play Store pages, website legal pages, and the public IP lookup endpoint.",
       "No warranty is provided for perfect accuracy, uptime, compatibility, or suitability for a particular use case. Device information is best-effort and may be inferred when OEMs do not expose exact values.",
@@ -31,14 +32,15 @@
     "title": "Privacy & Policy",
     "subtitle": "What the app reads, what stays local, what leaves the device, and why the app uses specific capabilities.",
     "bullets": [
-      "Most diagnostics are processed locally on your device. The app does not require account sign-in, does not include ads, and does not ship an analytics SDK or a developer-owned backend.",
+      "Most diagnostics are processed locally on your device. The app does not require account sign-in, does not include a developer-owned analytics backend, and does not require a personal account system.",
       "The app accesses installed packages, hardware and OS signals, storage, memory, SIM state, Bluetooth state, Wi-Fi state, camera characteristics, and sensor readings only to render the feature screens you open, including Installed Apps, System Apps, All Apps, Hidden Apps, and the local App Security Audit.",
       "The App Security Audit is a local heuristic review of installer trust, launcher visibility, permission exposure, and selected package capabilities. It is not a cloud antivirus scan and does not guarantee malware detection.",
+      "The app includes Google AdMob native ads in selected screens and occasional app-open ads after longer background inactivity. Ad requests may send device, app, and network metadata to Google or its advertising partners according to the Google Mobile Ads SDK behavior and Google policies.",
       "The microphone test records a short local sample only when you start the test. That sample is used for on-device playback, stays in app cache for the active test session, and is deleted when you leave the microphone test screen.",
       "Crash logs are stored locally in app-private storage so you can inspect the latest failure report from Settings or the crash screen. They remain there until you clear them, clear app data, or uninstall the app.",
       "The Public IP action sends a request to ipwho.is only when you tap that button. That request exposes your current network IP address and standard request metadata to that third-party service.",
       "App inventory access is used to populate Installed Apps, System Apps, All Apps, Hidden Apps, package details screens, and the local App Security Audit. Without broad package visibility, those features would return partial results on modern Android.",
-      "The app does not intentionally sell data. External sharing is limited to explicit user actions such as opening links, sending email, opening the Play Store, opening the legal website, or requesting public IP details.",
+      "The app does not intentionally sell data. External sharing is limited to explicit user actions such as opening links, sending email, opening the Play Store, opening the legal website, requesting public IP details, or loading Google-served ads.",
       "For support or privacy questions, use the Contact page on the website or the Contact tab inside the app legal dialog."
     ]
   },
